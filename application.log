@@ -1,46 +1,46 @@
-2022-06-02 19:48:13,591  INFO [main] Hooks:22 - Application Started
-2022-06-02 19:48:32,302  INFO [main] Accessibility_CaptionsStep:20 - Entering Accessibility_Caption test case
-2022-06-02 19:48:35,887  INFO [main] Accessibility_CaptionsStep:38 - Enable Caption to perform actions
-2022-06-02 19:48:46,009  INFO [main] Accessibility_CaptionsStep:61 - Validating outcomes of the actions performed after enable caption
-2022-06-02 19:48:46,202  INFO [main] Accessibility_CaptionsStep:75 - End of the Accessibility scenario
-2022-06-02 19:48:46,204  INFO [main] Hooks:34 - Application closed
-2022-06-02 19:48:49,781  INFO [main] Hooks:22 - Application Started
-2022-06-02 19:49:03,661  INFO [main] AddLayout_step:21 - Entering the animation Addlayout test case
-2022-06-02 19:49:07,009  INFO [main] AddLayout_step:39 - Adding element
-2022-06-02 19:49:07,255  INFO [main] AddLayout_step:54 - Validating the outcome against the add performance
-2022-06-02 19:49:07,260  INFO [main] AddLayout_step:58 - End of the Addlayout testcase
-2022-06-02 19:49:07,261  INFO [main] Hooks:34 - Application closed
-2022-06-02 19:49:09,264  INFO [main] Hooks:22 - Application Started
-2022-06-02 19:49:23,561  INFO [main] AppStep:23 - Entering the App test case
-2022-06-02 19:49:34,810  INFO [main] AppStep:41 - Performing display title action
-2022-06-02 19:49:40,223  INFO [main] AppStep:51 - Performing the display show title action
-2022-06-02 19:49:42,298  INFO [main] AppStep:61 - Validating the outcome against the actions
-2022-06-02 19:49:42,298  INFO [main] AppStep:66 - End of the App test 
-2022-06-02 19:49:42,298  INFO [main] Hooks:34 - Application closed
-2022-06-02 19:49:43,811  INFO [main] Hooks:22 - Application Started
-2022-06-02 19:49:56,397  INFO [main] AppDeviceAdminStep:22 - Entering the AppDeviceAdmin test case
-2022-06-02 19:50:09,313  INFO [main] AppDeviceAdminStep:43 - Enable Device Admin and performing actions 
-2022-06-02 19:50:10,533  INFO [main] AppDeviceAdminStep:56 - Validating the outcome against the actions
-2022-06-02 19:50:10,734  INFO [main] AppDeviceAdminStep:68 - End of the AppDeviceSAdmin test case
-2022-06-02 19:50:10,735  INFO [main] Hooks:34 - Application closed
-2022-06-02 19:50:12,589  INFO [main] Hooks:22 - Application Started
-2022-06-02 19:50:29,095  INFO [main] AnimationStep:23 - Entering the Animation test cases
-2022-06-02 19:50:32,778  INFO [main] AnimationStep:40 - Performing hide operation
-2022-06-02 19:50:37,875  INFO [main] AnimationStep:49 - Validating the outcome against the hide action
-2022-06-02 19:50:45,219  INFO [main] Hooks:34 - Application closed
-2022-06-02 19:50:46,349  INFO [main] Hooks:22 - Application Started
-2022-06-02 19:51:01,370  INFO [main] AnimationStep:23 - Entering the Animation test cases
-2022-06-02 19:51:05,870  INFO [main] AnimationStep:65 - Performing show action
-2022-06-02 19:51:23,295  INFO [main] AnimationStep:77 - Validating the outcome against the show action
-2022-06-02 19:51:23,395  INFO [main] AnimationStep:84 - End of the Animation test case
-2022-06-02 19:51:23,396  INFO [main] Hooks:34 - Application closed
-2022-06-02 19:51:26,278 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2022-06-02 19:51:26,283 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2022-06-02 19:51:26,291 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2022-06-02 19:51:26,296 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2022-06-02 19:51:26,297 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/arijitdas/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2022-06-02 19:51:27,651 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2022-06-02 19:51:27,651 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2022-06-02 19:51:27,653 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2022-06-02 19:51:27,654 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2022-06-02 19:51:27,655 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/arijitdas/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-06-02 22:01:01,302  INFO [main] Hooks:22 - Application Started
+2022-06-02 22:01:13,210  INFO [main] Accessibility_CaptionsStep:20 - Entering Accessibility_Caption test case
+2022-06-02 22:01:16,344  INFO [main] Accessibility_CaptionsStep:38 - Enable Caption to perform actions
+2022-06-02 22:01:25,128  INFO [main] Accessibility_CaptionsStep:61 - Validating outcomes of the actions performed after enable caption
+2022-06-02 22:01:25,174  INFO [main] Accessibility_CaptionsStep:75 - End of the Accessibility scenario
+2022-06-02 22:01:25,175  INFO [main] Hooks:34 - Application closed
+2022-06-02 22:01:25,757  INFO [main] Hooks:22 - Application Started
+2022-06-02 22:01:33,920  INFO [main] AddLayout_step:21 - Entering the animation Addlayout test case
+2022-06-02 22:01:36,881  INFO [main] AddLayout_step:39 - Adding element
+2022-06-02 22:01:37,845  INFO [main] AddLayout_step:54 - Validating the outcome against the add performance
+2022-06-02 22:01:37,847  INFO [main] AddLayout_step:58 - End of the Addlayout testcase
+2022-06-02 22:01:37,848  INFO [main] Hooks:34 - Application closed
+2022-06-02 22:01:38,524  INFO [main] Hooks:22 - Application Started
+2022-06-02 22:01:46,381  INFO [main] AppStep:23 - Entering the App test case
+2022-06-02 22:01:57,685  INFO [main] AppStep:41 - Performing display title action
+2022-06-02 22:02:02,815  INFO [main] AppStep:51 - Performing the display show title action
+2022-06-02 22:02:04,915  INFO [main] AppStep:61 - Validating the outcome against the actions
+2022-06-02 22:02:04,916  INFO [main] AppStep:66 - End of the App test 
+2022-06-02 22:02:04,917  INFO [main] Hooks:34 - Application closed
+2022-06-02 22:02:05,277  INFO [main] Hooks:22 - Application Started
+2022-06-02 22:02:11,105  INFO [main] AppDeviceAdminStep:22 - Entering the AppDeviceAdmin test case
+2022-06-02 22:02:22,461  INFO [main] AppDeviceAdminStep:43 - Enable Device Admin and performing actions 
+2022-06-02 22:02:23,362  INFO [main] AppDeviceAdminStep:56 - Validating the outcome against the actions
+2022-06-02 22:02:23,421  INFO [main] AppDeviceAdminStep:68 - End of the AppDeviceSAdmin test case
+2022-06-02 22:02:23,421  INFO [main] Hooks:34 - Application closed
+2022-06-02 22:02:23,805  INFO [main] Hooks:22 - Application Started
+2022-06-02 22:02:31,535  INFO [main] AnimationStep:23 - Entering the Animation test cases
+2022-06-02 22:02:34,915  INFO [main] AnimationStep:40 - Performing hide operation
+2022-06-02 22:02:39,976  INFO [main] AnimationStep:49 - Validating the outcome against the hide action
+2022-06-02 22:02:47,210  INFO [main] Hooks:34 - Application closed
+2022-06-02 22:02:47,569  INFO [main] Hooks:22 - Application Started
+2022-06-02 22:02:55,468  INFO [main] AnimationStep:23 - Entering the Animation test cases
+2022-06-02 22:02:58,833  INFO [main] AnimationStep:65 - Performing show action
+2022-06-02 22:03:16,062  INFO [main] AnimationStep:77 - Validating the outcome against the show action
+2022-06-02 22:03:16,118  INFO [main] AnimationStep:84 - End of the Animation test case
+2022-06-02 22:03:16,119  INFO [main] Hooks:34 - Application closed
+2022-06-02 22:03:16,624 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2022-06-02 22:03:16,626 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2022-06-02 22:03:16,628 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-06-02 22:03:16,630 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-06-02 22:03:16,630 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/arijitdas/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-06-02 22:03:16,858 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2022-06-02 22:03:16,858 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2022-06-02 22:03:16,859 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-06-02 22:03:16,860 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-06-02 22:03:16,861 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/arijitdas/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
