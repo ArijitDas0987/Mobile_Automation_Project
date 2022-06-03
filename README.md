@@ -4,16 +4,32 @@
 https://github.com/ArijitDas0987/Appium_Assignment.git --->Github link
 
 ## API DEMO App Testing
-### Test Cases
-#### (1) Validating the Hide and Show Feature
-#### (2) Validating the Deice Admin feature
-#### (3) Validating the Caption feature
-#### (4) Validating the Add Layout feature
-#### (5) Validating the Display Title feature
 
-### Instructions
-#### 1> Appium server need to be start manually
-#### 2> Test data can be changed through the excel file named as 'SampleExcel.xlsx'
-#### 3> To visualize the test automation need to start the emulator after setting it up as per the test data manually.
-#### 4> To run from CMD the batch file with extension '.bat' should be clicked.
-#### 5> The test report is a HTML file named ass App.html
+## Test Scenarios and test cases
+
+### Test cases In Animation
+
+##### 1--> Check the hide animation
+##### 2--> Check the show animation
+##### 3--> Check the add animation
+
+### Test cases In App
+
+##### 1--> Check the display title feature
+
+### Test cases are In Accessibility
+
+##### 1--> Check the Device admin feature
+##### 2--> Check the caption enable  feature
+
+
+## Instructions
+##### 1--> To run script in cmd please click on the .bat file e.g. 'BatchFile.bat'.
+##### 2--> The src/main contains the Test data, Pages and Report implementation
+##### 3---> The src/test contains the driver Configuration, feature files , steps and the runner file
+##### 4---> To visualize the script Android studio , Appium server need to be there in the sysetem and also appium server needed to start manually
+##### 5--> To Visualize the statistic of the script please check the 'App.html' file.
+##### 6--> Only failed cases will be captured as a screenshot
+##### 7--> the process of integrating jenkins is in the docx file "Process.docx"
+
+
