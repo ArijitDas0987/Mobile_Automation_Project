@@ -19,8 +19,6 @@ public class Base {
 	public static AppiumDriver<MobileElement>driver;
 	public static AppiumDriverLocalService se;
 
-	String Appium_Main="C:/Program Files/Appium Server GUI/resources/app/node_modules/appium/build/lib/main.js";
-	static String node="C:/Program Files/nodejs/node.exe";
 
 	public void base() throws MalformedURLException {
 		
@@ -28,10 +26,9 @@ public class Base {
 		Xls_Reader reader = new Xls_Reader("./src/main/java/com/excel/lib/util/SampleExcel.xlsx");
 		String sheetName = "SampleExcel";
 		
+		DesiredCapabilities dc =new DesiredCapabilities();
 		
 		/*--Taking data from the excel file --*/
-		
-		DesiredCapabilities dc =new DesiredCapabilities();
 		
 		
 		String PLATFORM_NAME_Value = reader.getCellData(sheetName, 1, 1);
@@ -78,9 +75,12 @@ public class Base {
 		 * code or we can use start_Manual variable for start our appium server manually.
 		 */
 		
-		if(Start_with_code.equalsIgnoreCase("headless")) {
+		if(Start_Manual.equalsIgnoreCase("headless")) {
 			
+					/* Here we give the node.exe file path and main.js path */
 			
+					String Appium_Main="C:/Program Files/Appium Server GUI/resources/app/node_modules/appium/build/lib/main.js";
+				    String node="C:/Program Files/nodejs/node.exe";
 					
 					/*-- Headless Driver setup-- Here Appium server starts through code --*/
 					
