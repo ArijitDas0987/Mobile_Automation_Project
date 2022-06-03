@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 import org.apache.log4j.Logger;
 
@@ -17,7 +18,7 @@ public class Hooks{
 
 
 	@Before
-	public void browser() {
+	public void browser() throws MalformedURLException {
 		
 		log.info("Application Started");
 	

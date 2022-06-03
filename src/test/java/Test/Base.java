@@ -22,73 +22,65 @@ public class Base {
 	String Appium_Main="C:/Program Files/Appium Server GUI/resources/app/node_modules/appium/build/lib/main.js";
 	static String node="C:/Program Files/nodejs/node.exe";
 
-	public void base() {
+	public void base() throws MalformedURLException {
 		
-		System.out.println(System.getProperty("user.dir"));
 		
 		Xls_Reader reader = new Xls_Reader("./src/main/java/com/excel/lib/util/SampleExcel.xlsx");
 		String sheetName = "SampleExcel";
+		
+		
+		/*--Taking data from the excel file --*/
+		
+		DesiredCapabilities dc =new DesiredCapabilities();
+		
+		
+		String PLATFORM_NAME_Value = reader.getCellData(sheetName, 1, 1);
+		
+		String PLATFORM_VERSION_Value = reader.getCellData(sheetName, 1, 2);
+		
+		String DEVICE_NAME_Value = reader.getCellData(sheetName, 1, 3);
+		
+		String AUTOMATION_NAME_Value = reader.getCellData(sheetName, 1, 4);
+		
+		String appPackage_Value = reader.getCellData(sheetName, 1, 5);
+
+		String appActivity_Value = reader.getCellData(sheetName, 1, 6);
+		
+		String url_Value = reader.getCellData(sheetName, 1, 7);
 		
 		String Start_with_code=reader.getCellData(sheetName, 1, 8);
 		
 		String Start_Manual=reader.getCellData(sheetName, 1, 9);
 		
 		
+		
+		/*--Emulator Configuration*/
+		
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME,PLATFORM_NAME_Value);
+		
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION,PLATFORM_VERSION_Value);
+	
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME,DEVICE_NAME_Value );
+
+		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME,AUTOMATION_NAME_Value);
+					
+		dc.setCapability("appPackage", appPackage_Value);
+		
+		dc.setCapability("appActivity", appActivity_Value);
+		
+
+		/*Host and Port setup*/
+		
+		URL url = new URL(url_Value);
+		
+		
 		/* -- Here we can differentiate with start_with_code for starting the driver with 
 		 * code or we can use start_Manual variable for start our appium server manually.
 		 */
 		
-		if(Start_Manual.equalsIgnoreCase("headless")) {
+		if(Start_with_code.equalsIgnoreCase("headless")) {
 			
-			try {
-				
-				/*--Taking data from the excel file --*/
-					
-					DesiredCapabilities dc =new DesiredCapabilities();
-					
-					
-					String PLATFORM_NAME_Value = reader.getCellData(sheetName, 1, 1);
-					
-					String PLATFORM_VERSION_Value = reader.getCellData(sheetName, 1, 2);
-					
-					String DEVICE_NAME_Value = reader.getCellData(sheetName, 1, 3);
-					
-					String AUTOMATION_NAME_Value = reader.getCellData(sheetName, 1, 4);
-					
-					String appPackage_Value = reader.getCellData(sheetName, 1, 5);
-		
-					String appActivity_Value = reader.getCellData(sheetName, 1, 6);
-					
-					String url_Value = reader.getCellData(sheetName, 1, 7);
-					
-					/*--Emulator Configuration*/
-					
-					dc.setCapability(MobileCapabilityType.PLATFORM_NAME,PLATFORM_NAME_Value);
-					
-					dc.setCapability(MobileCapabilityType.PLATFORM_VERSION,PLATFORM_VERSION_Value);
-				
-					dc.setCapability(MobileCapabilityType.DEVICE_NAME,DEVICE_NAME_Value );
-		
-					dc.setCapability(MobileCapabilityType.AUTOMATION_NAME,AUTOMATION_NAME_Value);
-								
-					dc.setCapability("appPackage", appPackage_Value);
-					
-					dc.setCapability("appActivity", appActivity_Value);
-					
-					
-					dc.setCapability("screenShotOnError", true);
-		
-					
-					/*--Headless mode trigger*/
-					
-					dc.setCapability("avdArgs", "-no-window");
-		
-					
-		
-					/*Host and Port setup*/
-					
-					URL url = new URL(url_Value);
-					
+			
 					
 					/*-- Headless Driver setup-- Here Appium server starts through code --*/
 					
@@ -98,70 +90,18 @@ public class Base {
 					
 					driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
-				}
-		
-				catch (MalformedURLException e) {
-					
-					e.printStackTrace();
-				}
 			
 		}
 		
 		else {
 			
-			try {
-				
-				/*--Taking data from the excel file --*/
-					
-					DesiredCapabilities dc =new DesiredCapabilities();
-					
-					
-					String PLATFORM_NAME_Value = reader.getCellData(sheetName, 1, 1);
-					
-					String PLATFORM_VERSION_Value = reader.getCellData(sheetName, 1, 2);
-					
-					String DEVICE_NAME_Value = reader.getCellData(sheetName, 1, 3);
-					
-					String AUTOMATION_NAME_Value = reader.getCellData(sheetName, 1, 4);
-					
-					String appPackage_Value = reader.getCellData(sheetName, 1, 5);
-		
-					String appActivity_Value = reader.getCellData(sheetName, 1, 6);
-					
-					String url_Value = reader.getCellData(sheetName, 1, 7);
-					
-					/*--Emulator Configuration*/
-					
-					dc.setCapability(MobileCapabilityType.PLATFORM_NAME,PLATFORM_NAME_Value);
-					
-					dc.setCapability(MobileCapabilityType.PLATFORM_VERSION,PLATFORM_VERSION_Value);
-				
-					dc.setCapability(MobileCapabilityType.DEVICE_NAME,DEVICE_NAME_Value );
-		
-					dc.setCapability(MobileCapabilityType.AUTOMATION_NAME,AUTOMATION_NAME_Value);
-								
-					dc.setCapability("appPackage", appPackage_Value);
-					
-					dc.setCapability("appActivity", appActivity_Value);
-		
-		
-					/*Host and Port setup*/
-					
-					URL url = new URL(url_Value);
-					
-
 					/*--Driver setup--*/
 					
 					driver=new AppiumDriver<MobileElement>(url,dc);
 					
 					driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
-				}
-		
-				catch (MalformedURLException e) {
-					
-					e.printStackTrace();
-				}
+				
 		}
 	
 		
