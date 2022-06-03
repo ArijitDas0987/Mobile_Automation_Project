@@ -75,7 +75,7 @@ public class Base {
 		 * code or we can use start_Manual variable for start our appium server manually.
 		 */
 		
-		if(Start_with_code.equalsIgnoreCase("headless")) {
+		if(Start_Manual.equalsIgnoreCase("headless")) {
 			
 					/* Here we give the node.exe file path and main.js path */
 			
