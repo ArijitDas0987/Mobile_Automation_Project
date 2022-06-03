@@ -24,6 +24,8 @@ public class Base {
 
 	public void base() {
 		
+		System.out.println(System.getProperty("user.dir"));
+		
 		Xls_Reader reader = new Xls_Reader("./src/main/java/com/excel/lib/util/SampleExcel.xlsx");
 		String sheetName = "SampleExcel";
 		
