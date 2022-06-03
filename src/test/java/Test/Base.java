@@ -38,7 +38,7 @@ public class Base {
 		 * code or we can use start_Manual variable for start our appium server manually.
 		 */
 		
-		if(Start_with_code.equalsIgnoreCase("headless")) {
+		if(Start_Manual.equalsIgnoreCase("headless")) {
 			
 			try {
 				
