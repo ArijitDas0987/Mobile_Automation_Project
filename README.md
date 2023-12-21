@@ -1,4 +1,4 @@
-# Appium_Assignment Exit Test
+# Mobile Automation through Appium Server
 
 ### Github Link
 ----------------------------
